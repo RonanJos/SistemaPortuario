@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema Portuário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚓ Sistema Portuário</h1>
+    <p>Gestão de Navios, Cargas e Solicitações</p>
+  </header>
+
+  <nav>
+    <a href="#">Navios</a>
+    <a href="#">Cargas</a>
+    <a href="#">Solicitações</a>
+  </nav>
+
+  <div class="container">
+    <!-- Cadastro de Navios -->
+    <div class="card">
+      <h2>Cadastro de Navios</h2>
+      <form>
+        <input type="text" placeholder="Nome do Navio" required>
+        <input type="text" placeholder="Origem" required>
+        <input type="text" placeholder="Destino" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <!-- Cadastro de Cargas -->
+    <div class="card">
+      <h2>Cadastro de Cargas</h2>
+      <form>
+        <input type="text" placeholder="Nome da Carga" required>
+        <input type="number" placeholder="Peso (kg)" required>
+        <select>
+          <option>Tipo de Carga</option>
+          <option>Granel</option>
+          <option>Contêiner</option>
+          <option>Veículos</option>
+          <option>Petróleo</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <!-- Solicitações -->
+    <div class="card">
+      <h2>Solicitações</h2>
+      <form>
+        <input type="text" placeholder="Nome do Solicitante" required>
+        <select>
+          <option>Escolher Navio</option>
+          <option>Navio 1</option>
+          <option>Navio 2</option>
+        </select>
+        <select>
+          <option>Status</option>
+          <option>Pendente</option>
+          <option>Em Andamento</option>
+          <option>Concluído</option>
+        </select>
+        <button type="submit">Registrar Solicitação</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
